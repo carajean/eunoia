@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Carolyn Codes</title>
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Dancing+Script|Quicksand|Raleway" rel="stylesheet">
+
+</head>
+
+<body class="bg">
+  <header id='header'>
+    <h1 id="title">eunoia
+      <span id="subtitle"> (n.) beautiful thinking; a well mind</span>
+    </h1>
+  </header>
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">Music</div>
+        <img class="rounded" src="pics/monsterConcert.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">Psychology</div>
+        <img class="rounded" src="pics/brainModel.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">Making a Difference</div>
+        <img class="rounded" src="pics/teaching.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">Animals & Nature</div>
+        <img class="rounded" src="pics/RileyMorro.jpg" style="width:100%">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- thumbnail images/actually just the captions -->
+      <div class="column">
+        <img class="demo" src="#" onclick="currentSlide(1)" alt="Monster Piano Concert, 2008">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="#" onclick="currentSlide(2)" alt="Model brain I made for a college neuropsychology project, 2010">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="#" onclick="currentSlide(3)" alt="Teaching a student with autism, 2012">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="#" onclick="currentSlide(4)" alt="Riley and me enjoying Cayucos, 2018">
+      </div>
+    </div>
+  </div>
+
+  <section class="ac-container">
+
+    <!-- whereFrom-->
+    <input id="c1" type="checkbox" name="checkbox" class="check">
+    <label for="c1">
+            <h2>Where I've come from...
+                <i class="labelArrow"></i>
+            </h2>
+        </label>
+
+    <!-- c1 content-->
+    <article class="ac">
+      <div class="Intro">
+        <img class="CarolynPic" src="pics/Carolyn.jpg">
+        <p class="IntroP">Hello! My name is Carolyn Campbell. Born and raised in San Luis Obispo and recently returned from the pacific northwest, I am a person of diverse interests and talents:</p>
+      </div>
+      <!-- end Intro -->
+
+      <table class="interestTable">
+        <tr>
+          <td>
+            <!-- Music -->
+
+            <div class="row">
+              <div class="visual visRight column">
+                <img class="visual" src="pics/notesPurple.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+              </div>
+
+              <p class="li">
+                <span class="emphasis">classical music:</span> specializing in choral singing and classical piano, I've had the privilege to perform in Carnegie Hall, conduct my high school choirs, perform piano accompaniments, write arrangements for
+                an a cappella group and a handbell ensemble, collaborate with concert pianists for an 8-piano piece, and perform internationally. I'm currently teaching myself to play mandolin.
+              </p>
+            </div>
+          </td>
+          <td>
+            <!-- Psychology -->
+
+            <div class="row">
+              <div class="visual visRight column">
+                <img class="visual" src="pics/brainPurple.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+              </div>
+              <p class="li">
+                <span class="emphasis">psychology:</span> apart from music, my education focused around neuroscience, sensation/perception, and cognition. I'm fascinated with how individuals percieve unique worlds due to different physiologies, biases,
+                and emotional landscapes. This is influenced by personal experiences of abnormal vision and a family member's learning disabilities.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Making a Difference -->
+
+            <div class="row">
+              <div class="visual visRight column">
+                <img class="visual" src="pics/heartPurple.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+              </div>
+              <p class="li">
+                <span class="emphasis">making a difference:</span> I feel helping others is part of my purpose. In high school I worked with Deaf children at a speech/language-pathology summer camp, and after college I utilized Applied Behavior Analysis
+                in my work with students with severe autism. I'm passionate about issues of accessibility and disability identity.
+              </p>
+            </div>
+          </td>
+          <td>
+            <!-- Animals/Nature -->
+
+            <div class="row">
+              <div class="visual visRight column">
+                <img class="visual" src="pics/mountainPurple.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+              </div>
+              <p class="li">
+                <span class="emphasis">animals and nature:</span> I adopted my dog Riley in 2017 while living in Seattle; since she's an anxious rescue, I utilize behavior analytics in her training/rehabilitation. I love sharing adventures with her through
+                hiking, trail running, and camping.</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div class="makesMeMe">
+        <h3 class="meMe">What makes me me?</h3>
+        <br>
+        <p class="qualities">creative ~ intelligent ~ curious ~ thoughtful ~ calm ~ independent ~ analytical ~ compassionate</p>
+      </div>
+    </article>
+    <!-- end content whereFrom -->
+
+    <!-- whereGoing -->
+    <input id="c2" type="checkbox" name="checkbox" class="check">
+    <label for="c2">
+            <h2>
+                ...and where I'm going
+                <i class="labelArrow"></i>
+            </h2>
+        </label>
+
+    <!-- c2 content-->
+    <article class="ac">
+      <div class="aspirations">
+        <div class="dream">
+          <p class="dreamTitle">My dream:</p>
+          <p class="dreamText">to be a software engineer with a biomedical company
+            <br>designing adaptive devices for people with disabilities
+          </p>
+        </div>
+        <p class="careerInterests">
+          <span class="focus">Professional interests:
+                        <ul>
+                            <li>machine learning as applied to sensory prosthetics</li>
+                            <li>navigation devices for people who are visually impaired</li>
+                            <li>speech devices for people who are nonverbal</li>
+                            <li>how cochlear implants/hearing aids could be situationally flexible for optimal music listening vs. speech recognition</li>
+                        </ul>
+                    </span>
+        </p>
+      </div>
+
+      <!-- aptitudes -->
+      <table class="aptitudeTable">
+        <tr class="aT">
+          <th>Aptitude</th>
+          <th>Percentile</th>
+        </tr>
+        <tr class="aT">
+          <td>
+            <span class="aptitude">Foresight:</span> ability to see many concept possibilities</td>
+          <td class="percentile">95th</td>
+        </tr class="aT">
+        <tr>
+          <td>
+            <span class="aptitude">Analytical reasoning</span>
+          </td>
+          <td class="percentile">90th</td>
+        </tr class="aT">
+        <tr>
+          <td>
+            <span class="aptitude">Memory for design:</span> 2D spatial memory</td>
+          <td class="percentile">90th</td>
+        </tr>
+        <tr class="aT">
+          <td>
+            <span class="aptitude">Structural visualization:</span> 3D mental schema</td>
+          <td class="percentile">80th</td>
+        </tr>
+        <tr class="aT">
+          <td>
+            <span class="aptitude">Number facility</span>
+          </td>
+          <td class="percentile">80th</td>
+        </tr>
+        <tr class="fullResults">
+          <td colspan="2">(View full results
+            <a href="pics/AptitudeResults.pdf" target="blank">here</a>)</td>
+        </tr>
+      </table>
+      <div class="utilizingApt">
+        <h3>Utilizing my Aptitudes</h3>
+        <p class="joc">This spring I did aptitude testing with the
+          <a href="https://www.jocrf.org/" target="_blank">Johnson O'Connor Research Foundation</a>. I learned that aptitudes - innate abilities to learn particular skills - significantly impact life and career satisfaction. Engaging in work and hobbies
+          which challenge high aptitudes, without requiring aptitudes one lacks, engenders greater fulfillment.</p>
+        <p>To that end, I am thrilled to have found a career path that both incorporates my passion for helping others and calls for the intellectual puzzle-solving I enjoy most. After spending the past few months learning to code, I've learned I have an
+          excellent mind for this.</p>
+      </div>
+      <!-- end aptitudes-->
+
+      <div class="Life">
+        <h3>My Life as a Programmer</h3>
+        <div class="values">
+          <p class="valueTitle">Values</p>
+          <span class="value">integrity</span>
+          <br>
+          <span class="value">excellence</span>
+          <br>
+          <span class="value">growth</span>
+          <br>
+          <span class="value">stability</span>
+          <br>
+          <span class="value">fulfillment</span>
+        </div>
+        <p>Balance for me means striving for wellness through relationships with friends/family, lifelong learning, exploring new recipes, making time for my dog, yoga, and creative pursuits. I will pursue this balance alongside my professional ventures.</p>
+        <p>I hope my programming career exemplifies helpfulness, creativity, and enthusiasm. I am proud to play a role in the movement toward STEM gender equality, and hope to advocate for other diversities in tech. I also hope to have a stable income which
+          affords a comfortable, active working life and retirement.</p>
+        <p>I want to help people with disabilities be more empowered and autonomous in their daily lives. I’m confident in my affinity for analytical/creative thinking, and am energized to have landed on a path that utilizes my principal strengths. My endeavors
+          in programming reflect that I'm following my calling and building myself a happier life.</p>
+      </div>
+    </article>
+    <!-- end whereGoing -->
+
+  </section>
+
+  <script type="text/javascript" src="script.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</body>
+
+</html>
