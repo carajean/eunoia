@@ -46,7 +46,7 @@ function showSlides(n) {
 
 //----- Misc -----
 
-//one checkbox open at a time - doesn't quite work
+//one checkbox open at a time
 let c1 = document.getElementById("c1");
 let c2 = document.getElementById("c2");
 
