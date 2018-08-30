@@ -9,17 +9,17 @@ function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
 
+//show slides & captions
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
 //next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
-}
-
-//show slides & captions
-function currentSlide(n) {
-  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
