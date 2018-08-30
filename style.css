@@ -72,7 +72,8 @@ h2 {
   padding: 10px;
 }
 
-.labelArrow {
+/* arrow icon */
+h2 > i.labelArrow {
   float: right;
   margin-top: 7px;
   margin-right: 10px;
@@ -87,8 +88,8 @@ h2 {
   transition: all 0.3s ease;
 }
 
-input:checked + i.labelArrow {
-  visibility: visible !important;
+input:checked i.labelArrow {
+  visibility: visible;
   transform: rotate(225deg);
   -webkit-transform: rotate(225deg);
   -moz-transform: rotate(225deg);
