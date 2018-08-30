@@ -18,6 +18,10 @@ function plusSlides(n) {
 }
 
 //show slides & captions
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
