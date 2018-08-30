@@ -144,12 +144,12 @@ input:checked i.labelArrow {
 }
 
 /* another transition for selected item */
-.ac-container input#c1:checked~#c1article {
+input#c1:checked~#c1article {
   transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
 }
 
-.ac-container input#c2:checked~#c2article {
+input#c2:checked~#c2article {
   transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
 }
@@ -164,7 +164,12 @@ input:checked i.labelArrow {
 }
 
 /* height of article */
-.ac-container input:checked~article.ac {
+input#c1:checked~#c1article.ac {
+  height: 375px;
+  ;
+}
+
+input#c2:checked~#c2article.ac {
   height: 375px;
   ;
 }
