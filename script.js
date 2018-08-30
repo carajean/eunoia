@@ -50,34 +50,35 @@ function showSlides(n) {
 let c1 = document.getElementById("c1");
 let c2 = document.getElementById("c2");
 
-function oneAtATime() {
+c1.onclick = function oneAtATime() {
   if (this.checked) {
-    // Item clicked has been turned on
-    if (this === c1) {
-      c2.checked = false;
-    } else {
-      c1.checked = false;
-    }
+    c2.checked = false;
   }
 }
-c1.addEventListener("change", oneAtATime);
-c2.addEventListener("change", oneAtATime);
 
+c2.onclick = function oneAtATime() {
+  if (this.checked) {
+    c1.checked = false;
+  }
+}
 
 //when label:hover, show/hide arrow icon
-let labelArrow = document.getElementsByClassName("labelArrow");
+let c1labelArrow = document.getElementById("c1labelArrow");
+let c2labelArrow = document.getElementById("c2labelArrow");
 
-function show() {
-  labelArrow.style.visibility = "visible";
+c1.onmouseover = function show() {
+  c1labelArrow.style.visibility = "visible";
 }
-c1.addEventListener("mouseover", show);
-c2.addEventListener("mouseover", show);
+c1.onmouseout = function show() {
+  c1labelArrow.style.visibility = "hidden";
+}
 
-function hide() {
-  labelArrow.style.visibility = "hidden";
+c2.onmouseover = function show() {
+  c2labelArrow.style.visibility = "visible";
 }
-c1.addEventListener("mouseout", hide);
-c2.addEventListener("mouseout", hide);
+c1.onmouseout = function show() {
+  c1labelArrow.style.visibility = "hidden";
+}
 
 //arrow flips on c1/2 click
 function flip() {

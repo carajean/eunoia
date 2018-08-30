@@ -73,7 +73,7 @@ h2 {
 }
 
 /* arrow icon */
-h2 > i.labelArrow {
+h2>i.labelArrow {
   float: right;
   margin-top: 7px;
   margin-right: 10px;
@@ -125,7 +125,7 @@ input:checked i.labelArrow {
   display: none;
 }
 
-/* content has initial height = 0 & overflow hidden; transition for height/box-shadow */
+/* content has initial height = 0 & overflow hidden */
 .ac-container article {
   background: rgba(255, 255, 255, 0.75);
   margin-top: -1px;
@@ -136,11 +136,20 @@ input:checked i.labelArrow {
   height: 0px;
   position: relative;
   z-index: 10;
+}
+
+/* transition for height/box-shadow */
+.ac-container #c1article, .ac-container #c2article {
   transition: height 0.4s ease-in-out, box-shadow 0.6s linear;
 }
 
 /* another transition for selected item */
-.as-container input:checked~article {
+.ac-container input#c1:checked~#c1article {
+  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
+}
+
+.ac-container input#c2:checked~#c2article {
   transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
 }
