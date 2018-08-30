@@ -69,14 +69,14 @@ let c2labelArrow = document.getElementById("c2labelArrow");
 c1.onmouseover = function show() {
   c1labelArrow.style.visibility = "visible";
 }
-c1.onmouseout = function show() {
+c1.onmouseout = function hide() {
   c1labelArrow.style.visibility = "hidden";
 }
 
 c2.onmouseover = function show() {
   c2labelArrow.style.visibility = "visible";
 }
-c1.onmouseout = function show() {
+c1.onmouseout = function hide() {
   c1labelArrow.style.visibility = "hidden";
 }
 
