@@ -1,57 +1,28 @@
-//one checkbox open at a time - doesn't quite work
-let c1 = document.getElementById("c1");
-let c2 = document.getElementById("c2");
-
-function oneAtATime() {
-  if (this.checked) {
-    // Item clicked has been turned on
-    if (this === c1) {
-      c2.checked = false;
-    } else {
-      c1.checked = false;
-    }
-  }
-}
-c1.addEventListener("change", oneAtATime);
-c2.addEventListener("change", oneAtATime);
-
-//when label:hover, show/hide arrow icon
-let labelArrow = document.getElementsByClassName("labelArrow");
-
-function show() {
-  labelArrow.style.visibility = "visible";
-}
-check.addEventListener("onmouseover", show);
-
-function hide() {
-  labelArrow.style.visibility = "hidden";
-}
-check.addEventListener("onmouseout", hide);
-
-//lightbox
-// Open the Modal
+//----- Lightbox ------
+//open modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
 
-// Close the Modal
+//close modal
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+//next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
+//show slides & captions
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -68,3 +39,37 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+//----- Misc -----
+
+//one checkbox open at a time - doesn't quite work
+let c1 = document.getElementById("c1");
+let c2 = document.getElementById("c2");
+let check = document.getElementsByClassName("check");
+
+function oneAtATime() {
+  if (this.checked) {
+    // Item clicked has been turned on
+    if (this === c1) {
+      c2.checked = false;
+    } else {
+      c1.checked = false;
+    }
+  }
+}
+c1.addEventListener("change", oneAtATime);
+c2.addEventListener("change", oneAtATime);
+
+
+//when label:hover, show/hide arrow icon
+let labelArrow = document.getElementsByClassName("labelArrow");
+
+function show() {
+  labelArrow.style.visibility = "visible";
+}
+check.addEventListener("onmouseover", show);
+
+function hide() {
+  labelArrow.style.visibility = "hidden";
+}
+check.addEventListener("onmouseout", hide);
