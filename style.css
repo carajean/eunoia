@@ -288,6 +288,7 @@ td {
 /* Hide the slides by default */
 .mySlides {
   display: none;
+  text-align:center;
 }
 
 .rounded {
@@ -330,9 +331,7 @@ td {
   color:#f2f2f2;
   background-color:rgba(0, 0, 0, 0.5);
   text-align:center;
-  position:relative;
-  left:100px;
-  border-bottom-left-radius:20px;
+  display:inline-block;
   border-bottom-right-radius:20px;
   font-family:"Quicksand", sans-serif;
   font-size:20px;
