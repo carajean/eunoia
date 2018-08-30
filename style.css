@@ -326,9 +326,8 @@ td {
   right: 0;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  font-family: "Quicksand", sans-serif;
-  font-size: 22px;
-  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
   padding: 5px 15px;
   position: absolute;
   top: 0;
@@ -456,7 +455,7 @@ li {
   height: 120px;
   float: left;
   margin-top: 10px;
-  margin-left: 200px;
+  margin-left: 170px;
   margin-right: 50px;
   padding: 12px;
   border-radius: 40px;
