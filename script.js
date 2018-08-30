@@ -71,9 +71,9 @@ let labelArrow = document.getElementsByClassName("labelArrow");
 function show() {
   labelArrow.style.visibility = "visible";
 }
-check.addEventListener("onmouseover", show);
+check.addEventListener("mouseover", show);
 
 function hide() {
   labelArrow.style.visibility = "hidden";
 }
-check.addEventListener("onmouseout", hide);
+check.addEventListener("mouseout", hide);

@@ -50,8 +50,8 @@ h1 {
 /* ----- CSS ACCORDION ----- */
 /* width for acordion & centered */
 .ac-container {
-  width: 98%;
-  margin: auto;
+  width:1250px;
+  margin:auto;
 }
 
 .ac-container label {
@@ -166,7 +166,7 @@ i {
 
 /* height of article */
 .ac-container input:checked ~ article.ac {
-  height: 375px;
+  height:375px;;
 }
 
 /* ----- CONTENT ----- */
@@ -196,6 +196,7 @@ i {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 20px;
+  width: 560px;
 }
 
 i {
@@ -581,10 +582,9 @@ h3 {
 
 .values {
   float: left;
-  margin-top: 10px;
   margin-right: 30px;
   line-height: 45px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .value {
