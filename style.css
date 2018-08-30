@@ -295,7 +295,7 @@ td {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 10px;
   margin-top: -50px;
   color: white;
   font-weight: bold;
@@ -309,13 +309,17 @@ td {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 10px 0 0 10px;
+}
+
+.prev {
+  border-radius: 0 10px 10px 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* captions - categories */
