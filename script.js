@@ -49,7 +49,6 @@ function showSlides(n) {
 //one checkbox open at a time - doesn't quite work
 let c1 = document.getElementById("c1");
 let c2 = document.getElementById("c2");
-let check = document.getElementsByClassName("check");
 
 function oneAtATime() {
   if (this.checked) {
@@ -71,9 +70,20 @@ let labelArrow = document.getElementsByClassName("labelArrow");
 function show() {
   labelArrow.style.visibility = "visible";
 }
-check.addEventListener("mouseover", show);
+c1.addEventListener("mouseover", show);
+c2.addEventListener("mouseover", show);
 
 function hide() {
   labelArrow.style.visibility = "hidden";
 }
-check.addEventListener("mouseout", hide);
+c1.addEventListener("mouseout", hide);
+c2.addEventListener("mouseout", hide);
+
+//arrow flips on c1/2 click
+function flip() {
+  labelArrow.style.transform= "rotate(225deg)";
+  labelArrow.style.transition: "all 0.3s ease";
+}
+
+c1.addEventListener("click", flip);
+c2.addEventListener("click", flip);

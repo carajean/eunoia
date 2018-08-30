@@ -72,23 +72,13 @@ h2 {
   padding: 10px;
 }
 
-i {
-  border: solid rgb(18, 13, 70);
-  opacity: 0.8;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  margin-left: 4px;
-  padding: 3px;
-}
-
 .labelArrow {
-  visibility: hidden;
   float: right;
   margin-top: 7px;
   margin-right: 10px;
   border: solid white;
   opacity: 0.5;
-  border-width: 0 5px 5px 0;
+  border-width: 0 4px 4px 0;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -webkit-transition: all 0.3s ease;
@@ -97,13 +87,14 @@ i {
   transition: all 0.3s ease;
 }
 
-.ac-container input:checked+i.labelArrow {
-  visibility: visible;
+input:checked + i.labelArrow {
+  visibility: visible !important;
+  transform: rotate(225deg);
   -webkit-transform: rotate(225deg);
   -moz-transform: rotate(225deg);
   -ms-transform: rotate(225deg);
   -o-transform: rotate(225deg);
-  transform: rotate(225deg);
+  transition: all 0.3s ease;
 }
 
 .ac-container label:hover {
