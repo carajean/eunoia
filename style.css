@@ -9,11 +9,9 @@ body {
 header {
   opacity: 0.9;
   text-align: center;
-  background: radial-gradient(
-    circle,
+  background: radial-gradient(circle,
     rgba(16, 43, 102, 0.9),
-    rgb(15, 102, 124, 0.9)
-  );
+    rgb(15, 102, 124, 0.9));
   color: rgba(255, 255, 255, 1);
   padding: 10px;
   margin-top: -15px;
@@ -41,7 +39,7 @@ h1 {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-image:url("pics/OceanView.jpg");
+  background-image: url("pics/OceanView.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -50,8 +48,8 @@ h1 {
 /* ----- CSS ACCORDION ----- */
 /* width for acordion & centered */
 .ac-container {
-  width:1250px;
-  margin:auto;
+  width: 1250px;
+  margin: auto;
 }
 
 .ac-container label {
@@ -99,7 +97,7 @@ i {
   transition: all 0.3s ease;
 }
 
-.ac-container input:checked + i.labelArrow {
+.ac-container input:checked+i.labelArrow {
   visibility: visible;
   -webkit-transform: rotate(225deg);
   -moz-transform: rotate(225deg);
@@ -121,8 +119,8 @@ i {
 }
 
 /* when a label is clicked, the checkbox gets checked & label gets selected style */
-.ac-container input:checked + label,
-.ac-container input:checked + label:hover {
+.ac-container input:checked+label,
+.ac-container input:checked+label:hover {
   background-color: #555;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -150,7 +148,7 @@ i {
 }
 
 /* another transition for selected item */
-.as-container input:checked ~ article {
+.as-container input:checked~article {
   transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
 }
@@ -165,8 +163,9 @@ i {
 }
 
 /* height of article */
-.ac-container input:checked ~ article.ac {
-  height:375px;;
+.ac-container input:checked~article.ac {
+  height: 375px;
+  ;
 }
 
 /* ----- CONTENT ----- */
@@ -222,7 +221,7 @@ td {
 }
 
 /* ----- LIGHTBOX ----- */
-.row > .column {
+.row>.column {
   padding: 0 8px;
 }
 
@@ -262,7 +261,7 @@ td {
   border-radius: 20px;
   margin: auto;
   padding: 0;
-  width:384px;
+  width: 384px;
   opacity: 1;
   z-index: 100;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
@@ -288,7 +287,7 @@ td {
 /* Hide the slides by default */
 .mySlides {
   display: none;
-  text-align:center;
+  text-align: center;
 }
 
 .rounded {
@@ -299,48 +298,48 @@ td {
 /* Next & previous buttons */
 .prev,
 .next {
-  cursor:pointer;
-  position:absolute;
-  top:50%;
-  width:auto;
-  padding:16px;
-  margin-top:-50px;
-  color:white;
-  font-weight:bold;
-  font-size:20px;
-  transition:0.6s ease;
-  border-radius:0 3px 3px 0;
-  user-select:none;
-  -webkit-user-select:none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right:0;
-  border-radius:3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color:rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* captions - categories */
 .numbertext {
-  color:#f2f2f2;
-  background-color:rgba(0, 0, 0, 0.5);
-  text-align:center;
-  position:absolute;
-  right:0;
-  border-top-right-radius:20px;
-  border-bottom-left-radius:20px;
-  font-family:"Quicksand", sans-serif;
-  font-size:22px;
-  font-weight:bold;
-  padding:5px 15px;
-  position:absolute;
-  top:0;
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: absolute;
+  right: 0;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 5px 15px;
+  position: absolute;
+  top: 0;
 }
 
 /* caption text */
@@ -375,7 +374,6 @@ img.hover-shadow {
 }
 
 /* category content */
-
 .visual {
   float: right;
   margin: 20px;
@@ -399,7 +397,7 @@ img.hover-shadow {
   animation-name: visual-fade;
   animation-duration: 1200ms;
   animation-fill-mode: forwards;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 @keyframes visual-fade {
@@ -527,7 +525,7 @@ ul {
   margin-right: 80px;
   float: right;
   font-family: "Quicksand", sans-serif;
-  background-color: rgba(0, 0, 0, 0.07);
+  background-color: rgba(0, 0, 0, 0.071);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
   padding: 15px 15px 5px 15px;
   margin-left: 30px;
@@ -571,6 +569,7 @@ h3 {
 .Life {
   margin: 40px 270px;
   display: block;
+  width: 675px;
 }
 
 .valueTitle {
@@ -596,13 +595,4 @@ h4 {
   font-family: "Quicksand", sans-serif;
   font-size: 21px;
   font-weight: bold;
-}
-
-@media (min-width: 481px) {
-}
-
-@media (min-width: 769px) {
-}
-
-@media (min-width: 1280px) {
 }
