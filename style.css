@@ -72,32 +72,6 @@ h2 {
   padding: 10px;
 }
 
-/* arrow icon */
-h2>i.labelArrow {
-  float: right;
-  margin-top: 7px;
-  margin-right: 10px;
-  border: solid white;
-  opacity: 0.5;
-  border-width: 0 4px 4px 0;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-input:checked i.labelArrow {
-  visibility: visible;
-  transform: rotate(225deg);
-  -webkit-transform: rotate(225deg);
-  -moz-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  -o-transform: rotate(225deg);
-  transition: all 0.3s ease;
-}
-
 .ac-container label:hover {
   animation-name: button-colors;
   animation-duration: 1500ms;

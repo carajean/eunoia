@@ -44,8 +44,7 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
-//----- Misc -----
-
+// ----- checkboxes -----
 //one checkbox open at a time
 let c1 = document.getElementById("c1");
 let c2 = document.getElementById("c2");
@@ -61,34 +60,3 @@ c2.onclick = function oneAtATime() {
     c1.checked = false;
   }
 }
-
-//when label:hover, show/hide arrow icon
-let c1labelArrow = document.getElementById("c1labelArrow");
-let c2labelArrow = document.getElementById("c2labelArrow");
-
-c1.onmouseover = function show() {
-  c1labelArrow.style.visibility = "visible";
-}
-c1.onmouseout = function hide() {
-  c1labelArrow.style.visibility = "hidden";
-}
-
-c2.onmouseover = function show() {
-  c2labelArrow.style.visibility = "visible";
-}
-c1.onmouseout = function hide() {
-  c1labelArrow.style.visibility = "hidden";
-}
-
-//arrow flips on c1/2 click
-function flip() {
-  c1labelArrow.style.transform= "rotate(225deg)";
-  c1labelArrow.style.transition= "all 0.3s ease";
-}
-
-function flip() {
-  c2labelArrow.style.transform= "rotate(225deg)";
-  c2labelArrow.style.transition= "all 0.3s ease";
-}
-c1.addEventListener("click", flip);
-c2.addEventListener("click", flip);
