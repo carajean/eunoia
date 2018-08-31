@@ -196,14 +196,6 @@ input#c2:checked~#c2article.ac {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
 }
 
-.li {
-  padding-right: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 20px;
-  width: 560px;
-}
-
 i {
   border: solid rgb(18, 13, 70);
   opacity: 0.8;
@@ -219,11 +211,26 @@ i {
 }
 
 .interestTable {
-  margin: 10px 50px;
+  width: 1100px;
+  height: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: -15px;
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  vertical-align: initial;
 }
 
-td {
-  padding: 0;
+.interestTable > div {
+  padding-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  width: 510px;
 }
 
 /* ----- LIGHTBOX ----- */
@@ -389,9 +396,9 @@ img.hover-shadow {
   font-size: 24px;
   border: none;
   position: relative;
-  left: 538px;
-  bottom: -30px;
-  color: rgba(90, 16, 151, 0.698);
+  left: 453px;
+  top: -10px;
+  color: rgba(0, 0, 0, 0.35);
 }
 
 .visual {
@@ -399,11 +406,11 @@ img.hover-shadow {
   margin: 20px;
   margin-top: 10px;
   margin-left: 7%;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   height: 85px;
   width: 85px;
   border-radius: 50%;
-  opacity: 0.75;
+  opacity: 0.7;
 }
 
 .visRight {
@@ -454,21 +461,6 @@ li {
   margin-top: -10px;
   margin-bottom: 8px;
   color: rgb(5, 109, 109);
-}
-
-.makesMeMe {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.07);
-  border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
-  margin: 20px 125px;
-  margin-bottom: 3f0px;
-  padding-top: 1px;
-  padding-bottom: 10px;
-}
-
-.meMe {
-  margin-bottom: 2px;
 }
 
 /* Where Going */
