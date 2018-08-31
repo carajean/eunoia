@@ -82,9 +82,13 @@ c1.onmouseout = function hide() {
 
 //arrow flips on c1/2 click
 function flip() {
-  labelArrow.style.transform= "rotate(225deg)";
-  labelArrow.style.transition= "all 0.3s ease";
+  c1labelArrow.style.transform= "rotate(225deg)";
+  c1labelArrow.style.transition= "all 0.3s ease";
 }
 
+function flip() {
+  c2labelArrow.style.transform= "rotate(225deg)";
+  c2labelArrow.style.transition= "all 0.3s ease";
+}
 c1.addEventListener("click", flip);
 c2.addEventListener("click", flip);
