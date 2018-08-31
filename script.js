@@ -1,4 +1,4 @@
-//----- Lightbox ------
+//----- lightbox ------
 //open modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
@@ -60,3 +60,14 @@ c2.onclick = function oneAtATime() {
     c1.checked = false;
   }
 }
+
+/* ----- arrow hide ----- */
+let arrow = document.getElementById('clickMeArrow');
+let visual = document.getElementById('firstVisual');
+
+function hide() {
+  arrow.style.visibility = hidden;
+}
+
+firstVisual.addEventListener('click', hide);
+firstVisual.addEventListener('focus', hide);
